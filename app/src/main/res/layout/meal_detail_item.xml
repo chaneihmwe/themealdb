@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/mealDetailImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/mealDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mealDetailImage"
+        app:layout_constraintBottom_toTopOf="@id/mealDetailDec"
+        app:layout_constraintLeft_toLeftOf="@id/mealDetailImage"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/mealDetailDec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mealDetailTitle"
+        app:layout_constraintLeft_toLeftOf="@id/mealDetailTitle"
+        android:justificationMode="inter_word"
+        android:padding = "6dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
